@@ -30,8 +30,7 @@ set(MUSA_INSTALL_PATH "/usr/local/musa")
 set(RT_LIB_NAME "musart")
 
 include_directories(
-  ${CMAKE_CURRENT_SOURCE_DIR}/include
-  ${CMAKE_CURRENT_SOURCE_DIR}
+  ${CMAKE_CURRENT_SOURCE_DIR}/../include
   ${MUSA_INSTALL_PATH}/include
 )
 
