@@ -57,7 +57,7 @@ file(APPEND "version_info.h" "\"")
 list(APPEND CMAKE_MODULE_PATH /usr/local/musa/cmake)
 find_package(MUSA REQUIRED)
 
-musa_add_executable(mixbench-cuda main-cuda.cpp mix_kernels_cuda.h lcutil.h version_info.h mix_kernels_cuda.mu mix_kernels_cuda.h lcutil.h)
+musa_add_executable(mixbench-cuda main-cuda.cpp mix_kernels_cuda.h lcutil.h version_info.h mix_kernels_cuda.cu mix_kernels_cuda.h lcutil.h)
 target_link_libraries(mixbench-cuda
     ${BASIC_LIB}
   )
